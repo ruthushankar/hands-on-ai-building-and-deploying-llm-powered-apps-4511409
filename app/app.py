@@ -1,5 +1,6 @@
 # Chroma compatibility issue resolution
 # https://docs.trychroma.com/troubleshooting#sqlite
+#demo app
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
